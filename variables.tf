@@ -10,7 +10,7 @@ variable "GOOGLE_REGION" {
 }
 
 variable "GKE_MACHINE_TYPE" {
-  default     = "e2-medium"
+  default     = "n2d-standard-2"
   description = "Machine type"
 }
 
