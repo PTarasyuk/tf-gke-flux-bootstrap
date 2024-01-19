@@ -62,12 +62,17 @@ output "kubeconfig" {
 | GKE_NUM_NODES    | Number of nodes in the node pool | number | 2               |    no    |
 
 ## Outputs
-kubeconfig - Generated Kubernetes configuration file
+
+- `config_host` - The IP address of this cluster's Kubernetes master.
+- `config_token` - The OAuth2 access token used by the client to authenticate against the Google Cloud API.
+- `config_ca` - Base64 encoded public certificate that is the root certificate of the cluster.
 
 ## Requirements
+
 This module requires Terraform 0.12 or later, and the following provider:
 
 hashicorp/google 4.52.0
 
 ## License
+
 This module is licensed under the MIT License. See the LICENSE file for details.

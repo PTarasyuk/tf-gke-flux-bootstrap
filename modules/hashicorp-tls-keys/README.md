@@ -23,13 +23,13 @@ output "public_key_openssh" {
 
 ## Inputs
 
-- algorithm - (Optional) The algorithm to use for the private key. Default is ECDSA.
-- ecdsa_curve - (Optional) The curve to use for ECDSA. Default is P256.
+- `algorithm` - (Optional) The algorithm to use for the private key. Default is ECDSA.
+- `ecdsa_curve` - (Optional) The curve to use for ECDSA. Default is P256.
 
 ## Outputs
 
-- private_key_pem - The generated private key in PEM format.
-- public_key_openssh - The generated public key in OpenSSH format.
+- `private_key_pem` - The generated private key in PEM format.
+- `public_key_openssh` - The generated public key in OpenSSH format.
 
 ## Requirements
 

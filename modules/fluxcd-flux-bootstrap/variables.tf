@@ -9,19 +9,25 @@ variable "target_path" {
   description = "Flux manifests subdirectory"
 }
 
-variable "github_token" {
-  type        = string
-  default     = ""
-  description = "The token used to authenticate with the Git repository"
-}
-
 variable "private_key" {
   type        = string
   description = "The private key used to authenticate with the Git repository"
 }
 
-variable "config_path" {
+variable "config_host" {
   type        = string
-  default     = "~/.kube/config"
-  description = "The path to the kubeconfig file"
+  default     = "gke"
+  description = "The url for kind"
+}
+
+variable "config_token" {
+  type        = string
+  default     = "token"
+  description = "The token for gke"
+}
+
+variable "config_ca" {
+  type        = string
+  default     = "ca"
+  description = "The ca for gke"
 }
